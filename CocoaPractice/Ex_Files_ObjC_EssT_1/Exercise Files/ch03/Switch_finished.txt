@@ -1,0 +1,24 @@
+
+
+    // create a variable - try different values
+    int category = 42;
+    
+    switch (category) {
+        case 40:
+            NSLog(@"It's a category 40");
+            break;
+        case 41:
+            NSLog(@"It's a category 41");
+            break;
+        case 42:
+            NSLog(@"It's case 42");
+            // this will have fall-thru, as there is no break.
+        case 43:
+            // this will fall thru.
+        case 44:
+            NSLog(@"It's a category 42, or 43, or 44");
+            break;
+        default:  // "if none of the above is true"
+            NSLog(@"I don't know what it was!");
+            break;
+    }

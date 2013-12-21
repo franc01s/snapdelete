@@ -1,0 +1,19 @@
+    // paste into main function
+
+    NSString *message = @"Hello";
+    NSString *nextMessage = 
+            [NSString stringWithFormat:@"The word is: %@",message];
+    NSString *anotherMessage = 
+            [[NSString alloc] initWithFormat:@"The word is: %@",message];
+                                
+    NSDate *myDate = [NSDate date];
+    NSDate *nextDate = [NSDate dateWithTimeIntervalSince1970:23234544];
+    NSDate *anotherDate = [myDate copy];
+    
+    NSLog(@"The results are %@, %@, %@, %@, %@, %@", 
+          message, nextMessage, anotherMessage,
+          myDate, nextDate, anotherDate);
+    
+    // only two used the NARC (new alloc retain or copy) words
+    [anotherMessage release];
+    [anotherDate release];

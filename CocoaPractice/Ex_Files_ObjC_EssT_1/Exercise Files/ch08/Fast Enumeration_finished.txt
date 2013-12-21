@@ -1,0 +1,16 @@
+    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    // create a mutable dictionary
+    NSMutableDictionary *states =
+    [NSMutableDictionary dictionaryWithObjectsAndKeys:
+     @"Arizona",@"AZ",
+     @"California",@"CA",
+     @"Colorado",@"CO",
+     @"Hawaii",@"HI",
+     @"New Mexico",@"NM",
+     nil];
+    // add to it
+    [states setObject:@"Florida" forKey:@"FL"];
+    
+    for (NSString *stateAbbrev in states) {
+         NSLog(@"  %@ is for %@", stateAbbrev, [states objectForKey:stateAbbrev]);
+    }

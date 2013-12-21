@@ -1,0 +1,31 @@
+#import <Foundation/Foundation.h>
+
+int main (int argc, const char * argv[])
+{
+
+    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
+    NSFileManager *fileMgr = [[NSFileManager alloc] init];
+    
+    // obviously you'll need to change the path here!
+    NSString *path = @"/Users/CHANGETHIS/text.txt";
+    
+    if ([fileMgr fileExistsAtPath:path] ) {
+        NSLog(@"Yes it exists");
+        NSDictionary *fileAttributes = 
+        [fileMgr attributesOfItemAtPath:path error:nil];
+        for (NSString *key in fileAttributes) {
+            NSLog(@" Attribute %@ is %@", key, [fileAttributes objectForKey:key]);
+        }
+        [fileMgr moveItemAtPath:path toPath:@"/Users/CHANGETHIS/newname.txt" error:nil];
+    } else {
+        NSLog(@"No, it doesn't exist");
+    }
+    
+    [fileMgr release];
+    
+
+    [pool drain];
+    return 0;
+}
+

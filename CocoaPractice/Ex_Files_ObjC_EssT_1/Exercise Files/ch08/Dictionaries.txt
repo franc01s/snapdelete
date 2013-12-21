@@ -1,0 +1,14 @@
+    NSMutableDictionary *states =
+    [NSMutableDictionary dictionaryWithObjectsAndKeys:
+     @"Arizona",@"AZ",
+     @"California",@"CA",
+     @"Colorado",@"CO",
+     @"Hawaii",@"HI",
+     @"New Mexico",@"NM",
+     nil];
+    
+    [states setObject:@"Florida" forKey:@"FL"];
+    
+    NSString *someState = @"FL";
+    
+    NSLog(@"  %@ is for %@", someState, [states objectForKey:someState]);

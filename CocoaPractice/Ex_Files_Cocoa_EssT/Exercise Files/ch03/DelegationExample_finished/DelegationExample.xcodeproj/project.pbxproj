@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327B53C315785391009EB96D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327B53C215785391009EB96D /* Cocoa.framework */; };
+		327B53CD15785391009EB96D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 327B53CB15785391009EB96D /* InfoPlist.strings */; };
+		327B53CF15785391009EB96D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B53CE15785391009EB96D /* main.m */; };
+		327B53D315785391009EB96D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 327B53D115785391009EB96D /* Credits.rtf */; };
+		327B53D615785391009EB96D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B53D515785391009EB96D /* AppDelegate.m */; };
+		327B53D915785392009EB96D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327B53D715785392009EB96D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		327B53BE15785391009EB96D /* DelegationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327B53C215785391009EB96D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		327B53C515785391009EB96D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		327B53C615785391009EB96D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		327B53C715785391009EB96D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		327B53CA15785391009EB96D /* DelegationExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DelegationExample-Info.plist"; sourceTree = "<group>"; };
+		327B53CC15785391009EB96D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		327B53CE15785391009EB96D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327B53D015785391009EB96D /* DelegationExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DelegationExample-Prefix.pch"; sourceTree = "<group>"; };
+		327B53D215785391009EB96D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		327B53D415785391009EB96D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		327B53D515785391009EB96D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		327B53D815785392009EB96D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327B53BB15785391009EB96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327B53C315785391009EB96D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327B53B315785391009EB96D = {
+			isa = PBXGroup;
+			children = (
+				327B53C815785391009EB96D /* DelegationExample */,
+				327B53C115785391009EB96D /* Frameworks */,
+				327B53BF15785391009EB96D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327B53BF15785391009EB96D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327B53BE15785391009EB96D /* DelegationExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327B53C115785391009EB96D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				327B53C215785391009EB96D /* Cocoa.framework */,
+				327B53C415785391009EB96D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		327B53C415785391009EB96D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				327B53C515785391009EB96D /* AppKit.framework */,
+				327B53C615785391009EB96D /* CoreData.framework */,
+				327B53C715785391009EB96D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		327B53C815785391009EB96D /* DelegationExample */ = {
+			isa = PBXGroup;
+			children = (
+				327B53D415785391009EB96D /* AppDelegate.h */,
+				327B53D515785391009EB96D /* AppDelegate.m */,
+				327B53D715785392009EB96D /* MainMenu.xib */,
+				327B53C915785391009EB96D /* Supporting Files */,
+			);
+			path = DelegationExample;
+			sourceTree = "<group>";
+		};
+		327B53C915785391009EB96D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				327B53CA15785391009EB96D /* DelegationExample-Info.plist */,
+				327B53CB15785391009EB96D /* InfoPlist.strings */,
+				327B53CE15785391009EB96D /* main.m */,
+				327B53D015785391009EB96D /* DelegationExample-Prefix.pch */,
+				327B53D115785391009EB96D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327B53BD15785391009EB96D /* DelegationExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327B53DC15785392009EB96D /* Build configuration list for PBXNativeTarget "DelegationExample" */;
+			buildPhases = (
+				327B53BA15785391009EB96D /* Sources */,
+				327B53BB15785391009EB96D /* Frameworks */,
+				327B53BC15785391009EB96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelegationExample;
+			productName = DelegationExample;
+			productReference = 327B53BE15785391009EB96D /* DelegationExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327B53B515785391009EB96D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Simon ";
+			};
+			buildConfigurationList = 327B53B815785391009EB96D /* Build configuration list for PBXProject "DelegationExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 327B53B315785391009EB96D;
+			productRefGroup = 327B53BF15785391009EB96D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327B53BD15785391009EB96D /* DelegationExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327B53BC15785391009EB96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327B53CD15785391009EB96D /* InfoPlist.strings in Resources */,
+				327B53D315785391009EB96D /* Credits.rtf in Resources */,
+				327B53D915785392009EB96D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327B53BA15785391009EB96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327B53CF15785391009EB96D /* main.m in Sources */,
+				327B53D615785391009EB96D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		327B53CB15785391009EB96D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327B53CC15785391009EB96D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		327B53D115785391009EB96D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327B53D215785391009EB96D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		327B53D715785392009EB96D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327B53D815785392009EB96D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327B53DA15785392009EB96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		327B53DB15785392009EB96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		327B53DD15785392009EB96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DelegationExample/DelegationExample-Prefix.pch";
+				INFOPLIST_FILE = "DelegationExample/DelegationExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		327B53DE15785392009EB96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DelegationExample/DelegationExample-Prefix.pch";
+				INFOPLIST_FILE = "DelegationExample/DelegationExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327B53B815785391009EB96D /* Build configuration list for PBXProject "DelegationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327B53DA15785392009EB96D /* Debug */,
+				327B53DB15785392009EB96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327B53DC15785392009EB96D /* Build configuration list for PBXNativeTarget "DelegationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327B53DD15785392009EB96D /* Debug */,
+				327B53DE15785392009EB96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327B53B515785391009EB96D /* Project object */;
+}

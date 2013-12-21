@@ -1,0 +1,22 @@
+#import <Foundation/Foundation.h>
+
+#define HIGHSCORE 1000000
+#define PI 3.14159265
+
+int main (int argc, const char * argv[])
+{
+
+    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
+    int a = HIGHSCORE + 500;
+    // insert code here...
+    NSLog(@"%i", HIGHSCORE);
+    a++;
+    
+#if DEBUG    
+    NSLog(@"The maximum value of an int is %i", INT_MAX);
+#endif
+    
+    [pool drain];
+    return 0;
+}

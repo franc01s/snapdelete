@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F46F852D157D378200925405 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46F852C157D378200925405 /* Cocoa.framework */; };
+		F46F8537157D378200925405 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F46F8535157D378200925405 /* InfoPlist.strings */; };
+		F46F8539157D378200925405 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F8538157D378200925405 /* main.m */; };
+		F46F853D157D378200925405 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F46F853B157D378200925405 /* Credits.rtf */; };
+		F46F8540157D378200925405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F853F157D378200925405 /* AppDelegate.m */; };
+		F46F8543157D378200925405 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46F8541157D378200925405 /* MainMenu.xib */; };
+		F46F854B157D379800925405 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F854A157D379800925405 /* Book.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F46F8528157D378200925405 /* BindingTableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindingTableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F46F852C157D378200925405 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F46F852F157D378200925405 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F46F8530157D378200925405 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F46F8531157D378200925405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F46F8534157D378200925405 /* BindingTableViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BindingTableViews-Info.plist"; sourceTree = "<group>"; };
+		F46F8536157D378200925405 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F46F8538157D378200925405 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F46F853A157D378200925405 /* BindingTableViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BindingTableViews-Prefix.pch"; sourceTree = "<group>"; };
+		F46F853C157D378200925405 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F46F853E157D378200925405 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F46F853F157D378200925405 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F46F8542157D378200925405 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F46F8549157D379800925405 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F46F854A157D379800925405 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F46F8525157D378200925405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46F852D157D378200925405 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F46F851D157D378200925405 = {
+			isa = PBXGroup;
+			children = (
+				F46F8532157D378200925405 /* BindingTableViews */,
+				F46F852B157D378200925405 /* Frameworks */,
+				F46F8529157D378200925405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F46F8529157D378200925405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F46F8528157D378200925405 /* BindingTableViews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F46F852B157D378200925405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F46F852C157D378200925405 /* Cocoa.framework */,
+				F46F852E157D378200925405 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F46F852E157D378200925405 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F46F852F157D378200925405 /* AppKit.framework */,
+				F46F8530157D378200925405 /* CoreData.framework */,
+				F46F8531157D378200925405 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F46F8532157D378200925405 /* BindingTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				F46F853E157D378200925405 /* AppDelegate.h */,
+				F46F853F157D378200925405 /* AppDelegate.m */,
+				F46F8541157D378200925405 /* MainMenu.xib */,
+				F46F8533157D378200925405 /* Supporting Files */,
+				F46F8549157D379800925405 /* Book.h */,
+				F46F854A157D379800925405 /* Book.m */,
+			);
+			path = BindingTableViews;
+			sourceTree = "<group>";
+		};
+		F46F8533157D378200925405 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F46F8534157D378200925405 /* BindingTableViews-Info.plist */,
+				F46F8535157D378200925405 /* InfoPlist.strings */,
+				F46F8538157D378200925405 /* main.m */,
+				F46F853A157D378200925405 /* BindingTableViews-Prefix.pch */,
+				F46F853B157D378200925405 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F46F8527157D378200925405 /* BindingTableViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F46F8546157D378200925405 /* Build configuration list for PBXNativeTarget "BindingTableViews" */;
+			buildPhases = (
+				F46F8524157D378200925405 /* Sources */,
+				F46F8525157D378200925405 /* Frameworks */,
+				F46F8526157D378200925405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BindingTableViews;
+			productName = BindingTableViews;
+			productReference = F46F8528157D378200925405 /* BindingTableViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F46F851F157D378200925405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Simon;
+			};
+			buildConfigurationList = F46F8522157D378200925405 /* Build configuration list for PBXProject "BindingTableViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F46F851D157D378200925405;
+			productRefGroup = F46F8529157D378200925405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F46F8527157D378200925405 /* BindingTableViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F46F8526157D378200925405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46F8537157D378200925405 /* InfoPlist.strings in Resources */,
+				F46F853D157D378200925405 /* Credits.rtf in Resources */,
+				F46F8543157D378200925405 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F46F8524157D378200925405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46F8539157D378200925405 /* main.m in Sources */,
+				F46F8540157D378200925405 /* AppDelegate.m in Sources */,
+				F46F854B157D379800925405 /* Book.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F46F8535157D378200925405 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F46F8536157D378200925405 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F46F853B157D378200925405 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F46F853C157D378200925405 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F46F8541157D378200925405 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F46F8542157D378200925405 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F46F8544157D378200925405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F46F8545157D378200925405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F46F8547157D378200925405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BindingTableViews/BindingTableViews-Prefix.pch";
+				INFOPLIST_FILE = "BindingTableViews/BindingTableViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F46F8548157D378200925405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BindingTableViews/BindingTableViews-Prefix.pch";
+				INFOPLIST_FILE = "BindingTableViews/BindingTableViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F46F8522157D378200925405 /* Build configuration list for PBXProject "BindingTableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46F8544157D378200925405 /* Debug */,
+				F46F8545157D378200925405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F46F8546157D378200925405 /* Build configuration list for PBXNativeTarget "BindingTableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46F8547157D378200925405 /* Debug */,
+				F46F8548157D378200925405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F46F851F157D378200925405 /* Project object */;
+}
