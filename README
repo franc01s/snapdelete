@@ -1,1 +1,75 @@
-Netapp snapdelete utility
+CocoaONTAP is an UNSUPPORTED port of the ManageONTAP SDK to Objective-C. It compiles both for Mac OS X desktop apps as well as on the iPhone. It should look familiar to users of other ManageONTAP SDK languages, while also providing features useful in a Cocoa application such as asynchronous method invocation.
+
+Classes
+NAElement
+NAElement represents an XML element in the ManageONTAP API, containing either textual content or nested NAElement children.
+
+Constructing: (Non-autoreleased alloc/init methods also exist)
+NAElement *element = [NAElement elementWithName:@"system-get-version"];
+NAElement *element = [NAElement elementWithName:@"volume" content:@"myvolume"];
+
+NAElements are also returned from API invocations. Messages exist on NAElement to retrieve the operation status from the root element and navigate children.
+
+The overall status of an API call may be tested with -(BOOL)resultsPassed. A successful call will return YES, a failed call will return NO:
+    if (![response resultsPassed]) { /* Handle error */ }
+
+If the call failed, additional information is available through -(NSString*)resultsReason and -(int)resultsErrno to retrieve the textual error message and numeric error code from ONTAP.
+
+Children may be navigated with the -(NAElement*)child: and -(NSArray*)children messages. If the node is a leaf node, the -(NSString)content message will return the contents.
+
+NAServer
+
+NAServer represents the set of parameters to connect to a ZAPI target. These include:
+	•	Hostname
+	•	Port
+	•	Transport (HTTP or HTTPS)
+	•	Server type (ONTAP or DFM)
+	•	Minimum API version
+
+NAServer *server = [[NAServer alloc] initWithServer:@"mysystem.example.com"
+    majorVersion:1
+    minorVersion:0];
+[server setUser:@"root" password:@"password"];
+[server setTransportType:NATransportHTTPS];
+
+NAApiConnection
+
+NAApiConnection represents a single active connection to a server. This is unlike other ManageONTAP SDK implementations, in order to provide support for asynchronous requests. This roughly mirrors NSURLConnection from Cocoa.
+
+Sending a synchronous request:
+NAElement *request = [NAElement elementWithName:@"system-get-version"];
+NAElement *response = [NAApiConnection sendSynchronousRequest:request
+    toServer:server];
+
+An asynchronous request will issue the ZAPI in the background, and invoke the specified selector when complete. The callback is then responsible for releasing the connection object when complete:
+
+- (void) systemGetVersionCallback:(NAApiConnection*)connection {
+    NAElement result = [connection result];
+    // Handle result
+    [connection release];
+}
+
+// ...
+
+    NAElement *request = [NAElement elementWithName:@"system-get-version"];
+
+    NAApiConnection *connection = [[NAApiConnection alloc] 
+        initWithRequest:request
+        toServer:server
+        target:self
+        selector:@selector(systemGetVersionCallback:)];
+    if (!connection) {
+        // Creating the request failed
+    }
+
+Building as a Framework
+The included XCode project builds a universal Cocoa framework named ManageONTAP. To use CocoaONTAP in a Mac OS X application, include this framework in the application bundle, and include ManageONTAP/ManageONTAP.h where needed in your application.
+
+Building for the iPhone
+The iPhone SDK agreement and the XCode tools prohibit third-party frameworks. To use the ManageONTAP SDK in an iPhone app, include the source files in the framework directory directly in your application. Include ManageONTAP.h where needed.
+
+Revision History:
+1/6/2009 Version 1.0
+	Initial release
+
+$Id: README.rtf 194 2009-01-06 15:16:34Z sunday $
